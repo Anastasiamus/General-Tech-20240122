@@ -1,0 +1,21 @@
+/*1.Отсортировать сотрудников по фамилии в алфавитном порядке.
+select * from staff
+order by "lastname" ASC ;
+
+2.Отсортировать сотрудников по зарплате - от самой большой зарплаты до самой маленькой.
+select * from staff
+order by "salary" DESC;
+
+3.Вывести сотрудников, работающих в департаментах с id 60, 90 и 110, отсортированными в алфавитном порядке по фамилии.
+select * from staff
+where id in (60,90,110) and order by "lastname" ASC;
+
+4.Вывести трех сотрудников, чьи имена начинаются на букву D и отсортировать их в алфавитном порядке по фамилии.
+select * from staff
+where firstname like 'D%';
+order by "lastname" ASC ;
+limit 3;
+
+5.Вывести сотрудника с самой низкой зарплатой.
+select * from staff
+order by salary ASC and limit 1; */nano taskSobjanina.sh
